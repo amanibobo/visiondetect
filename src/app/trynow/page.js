@@ -1,11 +1,10 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <section className="mb-28">
-      <MaxWidthWrapper>
+    
       <div>
         <h1 className="max-w-2xl text-3xl font-bold sm:text-4xl md:text-[2.8rem] lg:text-[2.8rem] pt-28 text-white">
           <span className="text-[#059669]">Fast & Easy </span>
@@ -34,7 +33,6 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-      </MaxWidthWrapper>
     </section>
   );
 }
