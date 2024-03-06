@@ -1,4 +1,3 @@
-import CardSpotlightEffect from "@/components/CardSpotlight";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -34,12 +33,6 @@ export default function Home() {
                 GitHub
               </Button>
             </Link>
-          </div>
-
-          <div className="flex">
-            <CardSpotlightEffect title = "Blazingly Fast" description="TensorFlow is an open-source library for machine learning applications. " />
-            <CardSpotlightEffect title="Created with Teachable Machine" description="Teachable Machine is a tool that allows users to train machine learning models without coding."/>
-            <CardSpotlightEffect title="Use of ML" description="Using modern day technologys, we were able to create this Model"/>
           </div>
       </MaxWidthWrapper>
     </section>
