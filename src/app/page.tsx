@@ -5,7 +5,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 import { Separator } from '@/components/ui/separator';
 import { Slider } from '@/components/ui/slider';
 import { beep } from '@/utils/audio';
-import { Camera, Divide, FlipHorizontal, MoonIcon, PersonStanding, SunIcon, Video, Volume2, Loader } from 'lucide-react';
+import { Camera, Divide, FlipHorizontal, MoonIcon, PersonStanding, SunIcon, Video, Volume2, Loader, Home } from 'lucide-react';
 import React, { useEffect, useRef, useState } from 'react'
 import Webcam from 'react-webcam';
 import { toast } from "sonner"
@@ -15,6 +15,7 @@ import "@tensorflow/tfjs-backend-webgl"
 import { DetectedObject, ObjectDetection } from '@tensorflow-models/coco-ssd';
 import { drawOnCanvas } from '@/utils/draw';
 import SocialMediaLinks from '@/components/social-links';
+import Link from "next/link";
 
 type Props = {}
 
@@ -145,7 +146,6 @@ const HomePage = (props: Props) => {
                 setMirrored((prev) => !prev)
               }}
             ><FlipHorizontal /></Button>
-
             <Separator className='my-2' />
           </div>
 
@@ -197,6 +197,10 @@ const HomePage = (props: Props) => {
                 />
               </PopoverContent>
             </Popover>
+
+            <Button variant={'outline'} size={'icon'}>
+                  <Link href={"/trynow"}><Home /></Link>
+            </Button>
           </div>
         </div>
 
@@ -205,7 +209,7 @@ const HomePage = (props: Props) => {
         </div>
       </div>
       {loading && <div className='z-50 absolute w-full h-full flex items-center justify-center bg-primary-foreground'>
-        Getting things ready . . . <Loader height={50} color='red' />
+        Getting things ready . . . <Loader height={50} color='white' />
       </div>}
     </div>
   )
@@ -288,6 +292,10 @@ const HomePage = (props: Props) => {
   function RenderFeatureHighlightsSection() {
     return <div className="text-xs text-muted-foreground">
       <ul className="space-y-4">
+      <li>
+          <strong>Welcome to Vision Detect</strong>
+          <p>Created by Amani Bobo.</p>
+        </li>
         <li>
           <strong>Dark Mode/Sys Theme 🌗</strong>
           <p>Toggle between dark mode and system theme.</p>
