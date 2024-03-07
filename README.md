@@ -8,5 +8,5 @@ This is an implementation of object detection and image recognition techniques u
 
 ### For more info, view the in depth analysis
 <pre>
-Analysis & Review : [Portfolio](https://amanibobo.vercel.app)
+Analysis & Review : <a href=amanibobo.vercel.app>Portfolio</a>
 </pre>
