@@ -16,6 +16,7 @@ import { DetectedObject, ObjectDetection } from '@tensorflow-models/coco-ssd';
 import { drawOnCanvas } from '@/utils/draw';
 import SocialMediaLinks from '@/components/social-links';
 import Link from "next/link";
+import BadgeShine from '@/components/BadgeBoy';
 
 type Props = {}
 
@@ -209,7 +210,7 @@ const HomePage = (props: Props) => {
         </div>
       </div>
       {loading && <div className='z-50 absolute w-full h-full flex items-center justify-center bg-primary-foreground'>
-        Getting things ready . . . <Loader height={50} color='white' />
+        Cooking Up . . . <Loader height={50} color='white' />
       </div>}
     </div>
   )
