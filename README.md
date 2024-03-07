@@ -5,3 +5,8 @@ This is an implementation of object detection and image recognition techniques u
 <pre>
 [Video Demo Will be Placed Here]
 </pre>
+
+### For more info, view the in depth analysis
+<pre>
+Analysis & Review : [Portfolio](https://amanibobo.vercel.app)
+</pre>
